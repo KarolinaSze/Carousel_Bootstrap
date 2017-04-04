@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>komponenty JS bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand logo" href="#">Simple Adventure</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+                    <li><a href="#">O mnie</a></li>
+                    <li><a href="#">Wyprawy</a></li>
+                    <li><a href="#">Kontakt</a></li>
+          <li><a href="#" class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Porady praktyczne<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"> 
+              <li role="presentation"><a role="menuitem" href="#">Apteczka</a></li> 
+              <li role="presentation"><a role="menuitem" href="#">Plecak</a></li> 
+              <li role="presentation"><a role="menuitem" href="#">Szczepienia</a></li>
+              <li role="presentation" class="divider"></li> 
+              <li role="presentation"><a role="menuitem" href="#">Blog podróżniczy</a></li>
+            </ul>
+          </li>
+        </ul> 
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Szukaj</button>
+        </form>
+      </div>
+    </div>
+    </nav> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators"> 
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+        <li data-target="#myCarousel" data-slide-to="1"></li> 
+        <li data-target="#myCarousel" data-slide-to="2"></li> 
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox"> 
+        <div class="item active example-1"> 
+          <img src="http://slawekrawicz.home.pl/ftp/pinkrabbit/TAJLANDIA/ART/IMG_3729_s.jpg" alt="1">
+        </div> 
+        <div class="item example-2">
+          <img src="http://slawekrawicz.home.pl/ftp/pinkrabbit/TAJLANDIA/ART/IMG_3441_s.jpg" alt="2">
+        </div> 
+        <div class="item example-3"> 
+          <img src="http://slawekrawicz.home.pl/ftp/pinkrabbit/TAJLANDIA/ART/IMG_3355_s.jpg" alt="3">
+        </div> 
+        <div class="item example-4"> 
+          <img src="http://slawekrawicz.home.pl/ftp/pinkrabbit/TAJLANDIA/ART/IMG_1758_s.jpg" alt="4">
+        </div> 
+        <div class="item example-5"> 
+          <img src="http://slawekrawicz.home.pl/ftp/pinkrabbit/TAJLANDIA/ART/IMG_3567_s.jpg" alt="5">
+        </div> 
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+        <span class="sr-only">Previous</span> 
+      </a> 
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+        <span class="sr-only">Next</span> 
+      </a>
+    </div>
+    <ul class="nav nav-tabs"> 
+      <li class="active"><a data-toggle="tab" href="#home">TRAMPING</a></li> 
+      <li><a data-toggle="tab" href="#menu2">PILOCI</a></li> 
+      <li><a data-toggle="tab" href="#menu3">OPINIE</a></li> 
+    </ul> 
+    <div class="tab-content"> 
+      <div id="home" class="tab-pane fade in active"> 
+        <h3>TRAMPING</h3> 
+        <p class="one">Wyprawy trampingowe różnią się znacznie od standardowych wycieczek objazdowych proponowanych przez biura podróży. Trampingi to często wyjazdy „budżetowe”. W trakcie podróży nocujemy w skromnych hotelach, w prywatnych domach lokalnych mieszkańców, a nawet w namiotach. Korzystamy z miejscowej komunikacji, jemy w lokalnych restauracjach, co pozwala nam poznać specyfikę danego kraju. Nie zapominamy też o potrzebie wypoczynku.<br>
+        Wyprawy trampingowe dają uczestnikom dużą swobodę w odkrywaniu danego kraju. Programy wyjazdów często oferują zajęcia fakultatywne, w których uczestnik bierze udział zgodnie z własnymi upodobaniami. Daje mu to możliwość organizowania sobie czasu wedle własnych potrzeb i możliwości finansowych.</p> 
+      </div> 
+      <div id="menu2" class="tab-pane fade"> 
+        <h3>PILOCI</h3> 
+        <p class="two">Jesteśmy osobami, które znają realia i smaki podróży w różnych rejonach świata. Służymy swoim doświadczeniem i wiedzą w trakcie wyprawy. Każdy z nas posiada wiedzę na temat kraju, do którego prowadzi wycieczkę trampingową. Wiedzę popartą najczęściej własnymi doświadczeniami, a niekiedy wieloletnim pobytem w danym miejscu. W sytuacjach kryzysowych podejmujemy zdecydowane działania. Nie boimy się radzić sobie w trudnych sytuacjach. Przede wszystkim pasjonuje nas to co robimy, a podróże z Wami traktujemy również jako nasze własne, głębokie doświadczenie. Chcemy żeby każdy czuł się z nami bezpiecznie i swobodnie. Lubimy podróżować w grupie. Uważamy, że to pewnego rodzaju wspólne przeżycie.</p> 
+      </div> 
+      <div id="menu3" class="tab-pane fade"> 
+        <h3>OPINIE</h3> 
+        <p class="three">Sprawdź co mówią o nas nasi klienci!</p> 
+      </div> 
+    </div>
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+      Otwórz okno dialogowe
+  </button>
+  <div id="exampleModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h4>INFORMACJE</h4>
+          </div>
+          <div class="modal-body">
+            <p>Ogólne informacje dla uczestników wypraw.<br>    Informacje praktyczne dotyczące konkretnej wyprawy są dostępne w zakładce "Wyprawy", a także omawiane na spotkaniu grupy z pilotem przed wyjazdem.
+        </p>
+          </div>
+          <div class="modal-footer">
+            <p>Stopka</p>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <nav class="footer navbar-fixed-bottom">
+    <section class="logo"><p> Simple Adventure </p> </section>
+    <section><p> ©2017 All Rights Reserved </p> </section>
+  </nav>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
